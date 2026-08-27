@@ -91,7 +91,11 @@ export default function App() {
                 Talos Env Generator
               </h1>
               <p className="text-slate-500 text-sm">
-                Gere credenciais seguras para seu ambiente local
+                Gere credenciais seguras para seu ambiente local.
+              </p>
+              <p className="text-slate-600 text-xs italic">
+                As chaves geradas são únicas e nunca armazenadas em nossos
+                servidores.
               </p>
             </div>
           </div>
@@ -139,10 +143,7 @@ export default function App() {
                       </span>
                       <button
                         onClick={() =>
-                          copyToClipboard(
-                            `${item.value}`,
-                            item.label
-                          )
+                          copyToClipboard(`${item.value}`, item.label)
                         }
                         className="text-slate-500 hover:text-white text-xs flex items-center gap-1 transition-colors cursor-pointer"
                         title={`Copiar ${item.label}`}
