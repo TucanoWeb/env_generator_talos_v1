@@ -1,0 +1,6 @@
+{
+  "name": "Env Config Generator",
+  "description": "Gera chaves seguras para configurações de ambiente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
